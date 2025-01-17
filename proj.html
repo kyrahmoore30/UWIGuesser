@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
     <title>Image in a Frame</title>
 </head>
 <body>
     <header>
         <img src="https://uwi.edu/alumnionline/sites/default/files/styles/articles/public/field/image/coat_of_arms_0.png?itok=P_J7V5AJ">
         <h1>UWI Guesser</h1>
+
+        <div class="mode">
+            <div class = "dropdown">
+                <h4>Mode ⮟</h4>
+                    <div class = "dropdown-content">
+                        <a href = "wait nvm">Easy</a>
+                        <a href = "wait nvm">Medium</a>
+                        <a href = "wait nvm">Hard</a>
+                    </div>
+            </div>
+        </div>
     </header>
     <div class="frame-container">
         <h1>Where is this?</h1>
@@ -17,15 +29,22 @@
     </div>
     <div class="input-container">
         <input type="text" placeholder="Enter your guess here...">
-        <button type="submit" id="submitGuess">Submit</button>
+        <!---<button type="submit" id="submitGuess">Submit</button>-->
     </div>
     <div class="button-container">
+        <a href="submit.html" class="button">
+            <span class="button-content">Submit</span>
+        </a>
         <button class="button" id="refreshButton">
             <span class="button-content">Refresh</span>
         </button>
-        <a href="submit.html" class="button">
-            <span class="button-content">Submit New</span>
-        </a>
     </div>
+    
+    <div class="countdown-container">
+        <h3 id="countdownDisplay">03:00</h3>
+        
+    </div>
+
+    
 </body>
 </html>
